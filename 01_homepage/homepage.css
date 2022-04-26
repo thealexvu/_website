@@ -1,10 +1,14 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.content {
+    font-family: 'Roboto';
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+}
+
+.header,
+.site-content {
+    margin: 0px 40px;
 }
 
 .header {
@@ -34,8 +38,8 @@ body {
 }
 
 .header .main-title .title-name {
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 50px;
+    font-weight: 900;
 }
 
 .header .links {
@@ -48,4 +52,22 @@ body {
 .header .links a {
     font-size: 20px;
     text-decoration: none;
+}
+
+.site-content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    background-color: gray;
+}
+
+.footer p {
+    font-size: 16px;
+    color: white;
+    font-weight: 100;
 }
